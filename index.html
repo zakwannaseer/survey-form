@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Document</title>
+</head>
+
+<body class="bg-dark py-3 py-lg-5 text-white" data-new-gr-c-s-check-loaded="14.996.0" data-gr-ext-installed="">
+    <div class="container-fluid">
+        <div class="container ">
+            <div class="row">
+                <div>
+                    <img src="./assets/logo.png" alt="" class="img-fluid logo">
+                </div>
+            </div>
+            <div class="text-center">
+                <h1 class="display-4">User Review Survey Form</h1>
+                <p class="lead">Products Survey</p>
+            </div>
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a href="#step-1" class="nav-link h4 mb-0 active" id="step-1-tab" data-bs-toggle="tab" role="tab" aria-controls="step-1" aria-selected="true">Step 1<br><small class="d-none d-md-inline">Personal Info</small></a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a href="#step-2" class="nav-link h4 mb-0" id="step-2-tab" data-bs-toggle="tab" role="tab" aria-controls="step-2" aria-selected="false">Step 2<br><small class="d-none d-md-inline">Questions w/answers</small></a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a href="#step-3" class="nav-link h4 mb-0" id="step-3-tab" data-bs-toggle="tab" role="tab" aria-controls="step-3" aria-selected="false">Step 3<br><small class="d-none d-md-inline">Questions w/ratings</small></a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade pt-4 active show scale-in-center" id="step-1" role="tabpanel" aria-labelledby="step-1-tab">
+                    <div class="row">
+                        <div class="col-md-3 mb-3">
+                            <label class="form-label">Sex:</label>
+                            <div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" name="sex" id="sex-male" value="male">
+                                    <label class="form-check-label" for="sex-male">Male</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" name="sex" id="sex-female" value="female">
+                                    <label class="form-check-label" for="sex-female">Female</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label class="form-label" for="age">Age:</label>
+                            <input type="number" class="form-control scale-in-left" id="age">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label" for="phone">Phone:</label>
+                            <input type="tel" class="form-control scale-in-left" id="phone">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label" for="name">Name:</label>
+                            <input type="text" class="form-control scale-in-left" id="name" placeholder="Firstname Lastname">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label" for="email">Email:</label>
+                            <input type="email" class="form-control scale-in-left" id="email" placeholder="username@domain.com">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <label class="form-label" for="address">Address:</label>
+                            <input type="text" class="form-control scale-in-left" id="address" placeholder="123 Street Name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label" for="city">City:</label>
+                            <input type="text" class="form-control scale-in-left" id="city" placeholder="City">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label" for="country">Country:</label>
+                            <select id="country" class="form-select scale-in-left">
+                            <option value="" selected="">- Select Country -</option>
+                            <option value="Denmark">Denmark</option>
+                            <option value="Finland">Finland</option>
+                            <option value="Norway">Norway</option>
+                            <option value="Sweden">Sweden</option>
+                        </select>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-outline-secondary d-block ms-auto" id="go-to-step-2">Step 2</button>
+                </div>
+                <div class="tab-pane fade pt-4" id="step-2" role="tabpanel" aria-labelledby="step-2-tab">
+                    <h2 class="h5 text-center mb-3">Question #1: how much do you like to wear snickers?</h2>
+                    <div class="row">
+                        <div class="col-lg-6 text-center">
+                            <figure class="figure">
+                                <img src="./assets/p2.jpg" class="figure-img img-fluid rounded step2-image tilt-in-left-1">
+                            </figure>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-check mb-1">
+                                <input class="form-check-input" type="radio" name="radioButtonsQuestion1" id="radioButtonsQuestion1-1" value="option1">
+                                <label class="form-check-label" for="radioButtonsQuestion1-1">Very Much</label>
+                            </div>
+                            <div class="form-check mb-1">
+                                <input class="form-check-input" type="radio" name="radioButtonsQuestion1" id="radioButtonsQuestion1-2" value="option2">
+                                <label class="form-check-label" for="radioButtonsQuestion1-2">Much</label>
+                            </div>
+                            <div class="form-check mb-1">
+                                <input class="form-check-input" type="radio" name="radioButtonsQuestion1" id="radioButtonsQuestion1-3" value="option3">
+                                <label class="form-check-label" for="radioButtonsQuestion1-3">Some times</label>
+                            </div>
+                            <div class="form-check mb-1">
+                                <input class="form-check-input" type="radio" name="radioButtonsQuestion1" id="radioButtonsQuestion1-4" value="option4">
+                                <label class="form-check-label" for="radioButtonsQuestion1-4">Often</label>
+                            </div>
+                            <div class="form-check mb-1">
+                                <input class="form-check-input" type="radio" name="radioButtonsQuestion1" id="radioButtonsQuestion1-5" value="option5">
+                                <label class="form-check-label" for="radioButtonsQuestion1-5">Not Often</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input mt-2" type="radio" name="radioButtonsQuestion1" id="radioButtonsQuestion1-6" value="option6">
+                                <label class="form-check-label" for="radioButtonsQuestion1-6">
+                  <input type="text" class="form-control form-control-sm" id="radioButtonsQuestion1-other" placeholder="Other" aria-describedby="radioButtonsQuestion1-other-help">
+                </label>
+                                <p id="radioButtonsQuestion1-other-help" class="form-text text-muted">If none of the answers above is appropriate for you please write your own answer in the input field.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <h2 class="h5 text-center mb-3">Question #2: How much do you like to wear yezzies?</h2>
+                    <div class="row">
+                        <div class="col-lg-6 text-center">
+                            <figure class="figure" data-aos="flip-left">
+                                <img src="./assets/p4.jpg" class="figure-img img-fluid rounded step2-image tilt-in-left-1">
+
+                            </figure>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-check mb-1">
+                                <input class="form-check-input" type="radio" name="radioButtonsQuestion2" id="radioButtonsQuestion2-1" value="option1">
+                                <label class="form-check-label" for="radioButtonsQuestion2-1">Very Much</label>
+                            </div>
+                            <div class="form-check mb-1">
+                                <input class="form-check-input" type="radio" name="radioButtonsQuestion2" id="radioButtonsQuestion2-2" value="option2">
+                                <label class="form-check-label" for="radioButtonsQuestion2-2">Much</label>
+                            </div>
+                            <div class="form-check mb-1">
+                                <input class="form-check-input" type="radio" name="radioButtonsQuestion2" id="radioButtonsQuestion2-3" value="option3">
+                                <label class="form-check-label" for="radioButtonsQuestion2-3">Sometimes</label>
+                            </div>
+                            <div class="form-check mb-1">
+                                <input class="form-check-input" type="radio" name="radioButtonsQuestion2" id="radioButtonsQuestion2-4" value="option4">
+                                <label class="form-check-label" for="radioButtonsQuestion2-4">Often</label>
+                            </div>
+                            <div class="form-check mb-1">
+                                <input class="form-check-input" type="radio" name="radioButtonsQuestion2" id="radioButtonsQuestion2-5" value="option5">
+                                <label class="form-check-label" for="radioButtonsQuestion2-5">Not Often</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input mt-2" type="radio" name="radioButtonsQuestion2" id="radioButtonsQuestion2-6" value="option6">
+                                <label class="form-check-label" for="radioButtonsQuestion2-6">
+                  <input type="text" class="form-control form-control-sm" id="radioButtonsQuestion2-other" placeholder="Other" aria-describedby="radioButtonsQuestion2-other-help">
+                </label>
+                                <p id="radioButtonsQuestion2-other-help" class="form-text text-muted">If none of the answers above is appropriate for you please write your own answer in the input field.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <h2 class="h5 text-center mb-3">Question #3: How much do you like to use sports wear?</h2>
+                    <div class="row">
+                        <div class="col-lg-6 text-center">
+                            <figure class="figure">
+                                <img src="./assets/p5.jpg" class="figure-img img-fluid rounded step2-image tilt-in-left-1">
+                                <figcaption class="figure-caption">A caption for the figure image.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-check mb-1">
+                                <input class="form-check-input" type="checkbox" name="checkBoxesQuestion3" id="checkBoxesQuestion3-1" value="option1">
+                                <label class="form-check-label" for="checkBoxesQuestion3-1">Very Much</label>
+                            </div>
+                            <div class="form-check mb-1">
+                                <input class="form-check-input" type="checkbox" name="checkBoxesQuestion3" id="checkBoxesQuestion3-2" value="option2">
+                                <label class="form-check-label" for="checkBoxesQuestion3-2">Much</label>
+                            </div>
+                            <div class="form-check mb-1">
+                                <input class="form-check-input" type="checkbox" name="checkBoxesQuestion3" id="checkBoxesQuestion3-3" value="option3">
+                                <label class="form-check-label" for="checkBoxesQuestion3-3">Sometimes</label>
+                            </div>
+                            <div class="form-check mb-1">
+                                <input class="form-check-input" type="checkbox" name="checkBoxesQuestion3" id="checkBoxesQuestion3-4" value="option4">
+                                <label class="form-check-label" for="checkBoxesQuestion3-4">Often</label>
+                            </div>
+                            <div class="form-check mb-1">
+                                <input class="form-check-input" type="checkbox" name="checkBoxesQuestion3" id="checkBoxesQuestion3-5" value="option5">
+                                <label class="form-check-label" for="checkBoxesQuestion3-5">Not Often</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input mt-2" type="checkbox" name="checkBoxesQuestion3" id="checkBoxesQuestion3-6" value="option6">
+                                <label class="form-check-label" for="checkBoxesQuestion3-6">
+                  <input type="text" class="form-control form-control-sm" id="checkBoxesQuestion3-other" placeholder="Other" aria-describedby="checkBoxesQuestion3-other-help">
+                </label>
+                                <p id="checkBoxesQuestion3-other-help" class="form-text text-muted">If none of the answers above is appropriate for you please write your own answer in the input field.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <button type="button" class="btn btn-outline-secondary d-block ms-auto" id="go-to-step-3">Step 3</button>
+                </div>
+                <div class="tab-pane fade pt-4" id="step-3" role="tabpanel" aria-labelledby="step-3-tab">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h2 class="h5 tracking-in-contract-bck-bottom">Question #5: How much you rate the comfort of our shoes?</h2>
+                            <p class="small">Also write little description</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex justify-content-between mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="ratingRadioQuestion5" id="ratingRadioQuestion5-1" value="rating-1">
+                                    <label class="form-check-label" for="ratingRadioQuestion5-1">1</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="ratingRadioQuestion5" id="ratingRadioQuestion5-2" value="rating-2">
+                                    <label class="form-check-label" for="ratingRadioQuestion5-2">2</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="ratingRadioQuestion5" id="ratingRadioQuestion5-3" value="rating-3">
+                                    <label class="form-check-label" for="ratingRadioQuestion5-3">3</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="ratingRadioQuestion5" id="ratingRadioQuestion5-4" value="rating-4">
+                                    <label class="form-check-label" for="ratingRadioQuestion5-4">4</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="ratingRadioQuestion5" id="ratingRadioQuestion5-5" value="rating-5">
+                                    <label class="form-check-label" for="ratingRadioQuestion5-5">5</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="ratingRadioQuestion5" id="ratingRadioQuestion5-na" value="rating-na">
+                                    <label class="form-check-label" for="ratingRadioQuestion5-na">n/a</label>
+                                </div>
+                            </div>
+                            <label class="visually-hidden" for="ratingRadioQuestion5-comment">Comment:</label>
+                            <textarea class="form-control form-control-sm" id="ratingRadioQuestion5-comment" name="ratingRadioQuestion5" rows="3" placeholder="Write a comment here..."></textarea>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h2 class="h5 tracking-in-contract-bck-bottom">Question #6: How much you rate the finishing of our shoes?</h2>
+                            <p class="small">Also write little description</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex justify-content-between mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="ratingRadioQuestion6" id="ratingRadioQuestion6-1" value="rating-1">
+                                    <label class="form-check-label" for="ratingRadioQuestion6-1">1</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="ratingRadioQuestion6" id="ratingRadioQuestion6-2" value="rating-2">
+                                    <label class="form-check-label" for="ratingRadioQuestion6-2">2</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="ratingRadioQuestion6" id="ratingRadioQuestion6-3" value="rating-3">
+                                    <label class="form-check-label" for="ratingRadioQuestion6-3">3</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="ratingRadioQuestion6" id="ratingRadioQuestion6-4" value="rating-4">
+                                    <label class="form-check-label" for="ratingRadioQuestion6-4">4</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="ratingRadioQuestion6" id="ratingRadioQuestion6-5" value="rating-5">
+                                    <label class="form-check-label" for="ratingRadioQuestion6-5">5</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="ratingRadioQuestion6" id="ratingRadioQuestion6-na" value="rating-na">
+                                    <label class="form-check-label" for="ratingRadioQuestion6-na">n/a</label>
+                                </div>
+                            </div>
+                            <label class="visually-hidden" for="ratingRadioQuestion6-comment">Comment:</label>
+                            <textarea class="form-control form-control-sm" id="ratingRadioQuestion6-comment" name="ratingRadioQuestion6" rows="3" placeholder="Write a comment here..."></textarea>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h2 class="h5 tracking-in-contract-bck-bottom">Question #7: How much you rate the designs of our shoes?</h2>
+                            <p class="small">Also write little description</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <div class="btn-group btn-group-lg w-100">
+                                    <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion7" id="ratingToggleButtonsQuestion7-1" value="rating-1" autocomplete="off">
+                                    <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion7-1">1</label>
+                                    <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion7" id="ratingToggleButtonsQuestion7-2" value="rating-2" autocomplete="off">
+                                    <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion7-2">2</label>
+                                    <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion7" id="ratingToggleButtonsQuestion7-3" value="rating-3" autocomplete="off">
+                                    <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion7-3">3</label>
+                                    <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion7" id="ratingToggleButtonsQuestion7-4" value="rating-4" autocomplete="off">
+                                    <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion7-4">4</label>
+                                    <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion7" id="ratingToggleButtonsQuestion7-5" value="rating-5" autocomplete="off">
+                                    <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion7-5">5</label>
+                                    <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion7" id="ratingToggleButtonsQuestion7-na" value="rating-na" autocomplete="off">
+                                    <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion7-na">n/a</label>
+                                </div>
+                            </div>
+                            <label class="visually-hidden" for="ratingToggleButtonsQuestion7-comment">Comment:</label>
+                            <textarea class="form-control form-control-sm" id="ratingToggleButtonsQuestion7-comment" name="ratingToggleButtonsQuestion7" rows="3" placeholder="Write a comment here..."></textarea>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h2 class="h5 tracking-in-contract-bck-bottom">Question #8: How much you rate the relaibility of our shoes?</h2>
+                            <p class="small">Also write little description</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="mb-3">
+                                <div class="btn-group btn-group-lg w-100">
+                                    <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion8" id="ratingToggleButtonsQuestion8-1" value="rating-1" autocomplete="off">
+                                    <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion8-1">1</label>
+                                    <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion8" id="ratingToggleButtonsQuestion8-2" value="rating-2" autocomplete="off">
+                                    <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion8-2">2</label>
+                                    <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion8" id="ratingToggleButtonsQuestion8-3" value="rating-3" autocomplete="off">
+                                    <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion8-3">3</label>
+                                    <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion8" id="ratingToggleButtonsQuestion8-4" value="rating-4" autocomplete="off">
+                                    <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion8-4">4</label>
+                                    <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion8" id="ratingToggleButtonsQuestion8-5" value="rating-5" autocomplete="off">
+                                    <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion8-5">5</label>
+                                    <input class="btn-check" type="radio" name="ratingToggleButtonsQuestion8" id="ratingToggleButtonsQuestion8-na" value="rating-na" autocomplete="off">
+                                    <label class="btn btn-outline-secondary" for="ratingToggleButtonsQuestion8-na">n/a</label>
+                                </div>
+                            </div>
+                            <label class="visually-hidden" for="ratingToggleButtonsQuestion8-comment">Comment:</label>
+                            <textarea class="form-control form-control-sm" id="ratingToggleButtonsQuestion8-comment" name="ratingToggleButtonsQuestion8" rows="3" placeholder="Write a comment here..."></textarea>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h2 class="h5 tracking-in-contract-bck-bottom">Question #9: how much do you give the number to our overall product?</h2>
+                            <p class="small">Also write little description.</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="me-3">1</span>
+                                <label for="ratingRangeQuestion9" class="form-label visually-hidden">Range input label</label>
+                                <input type="range" class="form-range" id="ratingRangeQuestion9" name="ratingRangeQuestion9" min="1" max="5">
+                                <span class="ms-3">5</span>
+                            </div>
+                            <label class="visually-hidden" for="ratingRangeQuestion9-comment">Comment:</label>
+                            <textarea class="form-control form-control-sm" id="ratingRangeQuestion9-comment" name="ratingRangeQuestion9" rows="3" placeholder="Write a comment here..."></textarea>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+
+                    <button type="submit" id="submitButton" class="btn btn-secondary d-block ms-auto">
+                            Submit
+                        <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        var goToStep2Trigger = document.querySelector('#go-to-step-2');
+        goToStep2Trigger.addEventListener('click', function() {
+            scrollToTop();
+            setTimeout(function() {
+                var step2TabElement = document.querySelector('#step-2-tab');
+                var step2Tab = new bootstrap.Tab(step2TabElement);
+                step2Tab.show();
+            }, 1000)
+        })
+
+        var goToStep3Trigger = document.querySelector('#go-to-step-3');
+        goToStep3Trigger.addEventListener('click', function() {
+            scrollToTop();
+            setTimeout(function() {
+                var step3TabElement = document.querySelector('#step-3-tab');
+                var step3Tab = new bootstrap.Tab(step3TabElement);
+                step3Tab.show();
+            }, 1000)
+        })
+
+        function scrollToTop() {
+            scroll({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
+        var submitButton = document.querySelector('#submitButton');
+        submitButton.addEventListener('click', function() {
+            submitButton.disabled = true;
+            submitButton.querySelector('.spinner-border').classList.remove('d-none');
+            setTimeout(function() {
+                window.location.href = 'results.html';
+            }, 2000)
+        })
+    </script>
+
+</body>
+
+</html>
